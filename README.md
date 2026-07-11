@@ -136,6 +136,8 @@ Through this project, I gained hands-on experience with:
 ## Author
 
 **Lady Jean Y. Geverola**
+
 BS Data Science
+
 University of the Philippines Mindanao
 

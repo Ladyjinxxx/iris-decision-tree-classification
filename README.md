@@ -40,9 +40,9 @@ The pruned Decision Tree achieved higher classification performance while reduci
 
 | | |
 |---|---|
-| ![Feature Histograms](outputs/charts/feature_histograms.png) | ![Boxplots](outputs/charts/boxplots.png) |
-| ![Correlation Heatmap](outputs/charts/correlation_heatmap.png) | ![Decision Tree](outputs/charts/decision_tree.png) |
-| ![Confusion Matrix](outputs/charts/confusion_matrix.png) | ![Feature Importance](outputs/charts/feature_importance.png) |
+| ![Feature Histograms](outputs/charts/feature_Histograms.png) | ![Boxplots](outputs/charts/Boxplots.png) |
+| ![Correlation Heatmap](outputs/charts/Correlation_Heatmap.png) | ![Prune Decision Tree](outputs/charts/Decision_Tree.png) |
+| ![Confusion Matrix](outputs/charts/Confusion_Matrix.png) | ![Feature Importance](outputs/charts/Feature_Importance.png) |
 
 ## Key Takeaways
 

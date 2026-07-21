@@ -1,135 +1,68 @@
-# Decision Tree Classification on the Iris Dataset
+# Level 2 - Task 2: Decision Tree Classification
 
-## Overview
+**Codveda Technologies Machine Learning Internship**
 
-This repository contains my submission for **Level 2 - Task 2: Decision Trees for Classification** as part of the **Codveda Technologies Machine Learning Internship**.
+A Decision Tree Classification model built using Scikit-learn to classify Iris flower species and demonstrate how tree pruning improves model performance and generalization.
 
-The project demonstrates how to build and evaluate a Decision Tree classifier using the Iris dataset. It covers the complete machine learning workflow, including data preprocessing, exploratory data analysis, model training, visualization of the decision tree, model pruning, performance evaluation, and feature importance analysis.
+## Project Overview
 
----
+This project implements a complete machine learning workflow using the Iris dataset. The notebook covers data exploration, preprocessing, feature analysis, Decision Tree model training, visualization of the decision tree, model evaluation, feature importance analysis, and cost-complexity pruning to reduce overfitting and improve generalization.
 
-## Objectives
+**Dataset:** Iris Flower Dataset — 150 samples of Iris flowers with four numerical features (sepal length, sepal width, petal length, and petal width) classified into three species: Setosa, Versicolor, and Virginica.
 
-- Load and explore the Iris dataset.
-- Perform data preprocessing and cleaning.
-- Train a Decision Tree classifier.
-- Visualize the decision tree structure.
-- Apply pruning techniques to reduce overfitting.
-- Evaluate the model using classification metrics.
-- Analyze feature importance.
-- Save the trained model for future use.
+## Model Architecture
 
----
+| Component | Description |
+|---|---|
+| Algorithm | Decision Tree Classifier |
+| Criterion | Gini Impurity |
+| Train-Test Split | 80% Training / 20% Testing |
+| Classes | Setosa, Versicolor, Virginica |
+| Features | Sepal Length, Sepal Width, Petal Length, Petal Width |
+| Optimization | Cost Complexity Pruning (CCP Alpha) |
 
-## Technologies Used
-
-- Python
-- Google Colab
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Joblib
-
----
-
-## Project Workflow
-
-1. Mount Google Drive
-2. Install and import required libraries
-3. Load the Iris dataset
-4. Perform Exploratory Data Analysis (EDA)
-5. Preprocess the data
-6. Split the dataset into training and testing sets
-7. Train the Decision Tree classifier
-8. Visualize the decision tree
-9. Make predictions
-10. Evaluate model performance
-11. Analyze feature importance
-12. Apply Decision Tree pruning
-13. Compare the original and pruned models
-14. Save the trained model
-
----
-
-## Visualizations
-
-The notebook includes the following visualizations:
-
-- Feature Histograms
-- Boxplots
-- Correlation Heatmap
-- Pairplot
-- Decision Tree Visualization
-- Confusion Matrix
-- Feature Importance Chart
-- Original vs. Pruned Decision Tree Comparison
-
----
-
-## Evaluation Metrics
-
-The model is evaluated using:
-
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Classification Report
-- Confusion Matrix
-
----
-
-## Dataset
-
-**Dataset:** Iris Dataset
-
-The Iris dataset is a well-known classification dataset containing measurements of iris flowers from three different species:
-
-- Iris Setosa
-- Iris Versicolor
-- Iris Virginica
-
-Features:
-
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
-
-Target:
-
-- Species
-
----
+The project compares an initial Decision Tree with a pruned version to evaluate improvements in model complexity and predictive performance.
 
 ## Results
 
-The Decision Tree classifier successfully learned to classify iris flower species based on their physical characteristics.
+| Metric | Initial Tree | Pruned Tree |
+|---|---:|---:|
+| Accuracy | 93.33% | **96.67%** |
+| Precision | 93.33% | **96.97%** |
+| Recall | 93.33% | **96.67%** |
+| F1-Score | 93.33% | **96.66%** |
+| Tree Depth | 5 | **3** |
+| Nodes | 15 | **9** |
 
-The notebook demonstrates:
+The pruned Decision Tree achieved higher classification performance while reducing tree depth and the number of decision nodes. This demonstrates that pruning simplified the model and improved its ability to generalize to unseen data.
 
-- Data preprocessing and visualization
-- Decision Tree model training
-- Tree visualization and interpretation
-- Model pruning to reduce overfitting
-- Performance evaluation using multiple classification metrics
-- Feature importance analysis
+## Visualizations
 
----
+| | |
+|---|---|
+| ![Feature Histograms](outputs/charts/feature_histograms.png) | ![Boxplots](outputs/charts/boxplots.png) |
+| ![Correlation Heatmap](outputs/charts/correlation_heatmap.png) | ![Decision Tree](outputs/charts/decision_tree.png) |
+| ![Confusion Matrix](outputs/charts/confusion_matrix.png) | ![Feature Importance](outputs/charts/feature_importance.png) |
 
-## Learning Outcomes
+## Key Takeaways
 
-Through this project, I gained hands-on experience with:
+- Petal length and petal width were the most influential features for classifying Iris species.
+- The Decision Tree correctly separated most flower species with high accuracy.
+- Cost Complexity Pruning reduced the tree depth from **5 to 3** while improving overall accuracy.
+- A simpler tree is easier to interpret and less likely to overfit the training data.
+- Decision Trees are widely used because they provide transparent, explainable predictions without requiring extensive data preprocessing.
 
-- Decision Tree Classification
-- Data preprocessing
-- Exploratory Data Analysis (EDA)
-- Tree visualization
-- Hyperparameter tuning
-- Model evaluation
-- Feature importance interpretation
+## Tools & Libraries
+
+Python · Pandas · NumPy · Matplotlib · Seaborn · Scikit-learn
+
+## How to Run
+
+1. Open `Level2_Task2_Decision_Tree_Classification.ipynb` in Google Colab.
+2. Mount Google Drive if prompted.
+3. Place the Iris dataset in the specified project directory.
+4. Run all notebook cells from top to bottom.
+5. Evaluation metrics, visualizations, and model outputs will be generated automatically and saved to the `outputs/` folder.
 
 ---
 
@@ -137,7 +70,5 @@ Through this project, I gained hands-on experience with:
 
 **Lady Jean Y. Geverola**
 
-BS Data Science
-
+BS Data Science  
 University of the Philippines Mindanao
-
